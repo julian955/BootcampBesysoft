@@ -75,8 +75,8 @@ class GeneroControllerTest {
     @Test
     void createGenero() throws Exception {
 
-        GeneroRE genero = new GeneroRE("Genero Test");
-        GeneroDTO generoDTO = new GeneroDTO(1L,"Genero Test",null);
+        GeneroRE genero = new GeneroRE("Romance");
+        GeneroDTO generoDTO = new GeneroDTO(1L,"Romance",null);
 
         when(service.createGenero(genero)).thenReturn(generoDTO);
 
